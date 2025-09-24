@@ -2418,7 +2418,7 @@
     "m_Title": "Alpha",
     "m_Position": {
         "x": 1254.0,
-        "y": -940.9998779296875
+        "y": -941.0
     }
 }
 
@@ -2428,7 +2428,7 @@
     "m_ObjectId": "433d376fae2e4934ab8eeab2ba91bc39",
     "m_Title": "Emissive Power",
     "m_Position": {
-        "x": 850.0001831054688,
+        "x": 850.0,
         "y": -1564.0
     }
 }
@@ -2885,7 +2885,7 @@
     "m_Title": "Dissovle",
     "m_Position": {
         "x": -1603.0,
-        "y": -349.9998779296875
+        "y": -350.0
     }
 }
 
@@ -3227,7 +3227,7 @@
     "m_ObjectId": "714a722b65264eff8596bfe3b7f3603b",
     "m_Title": "Soft Praticle Factor",
     "m_Position": {
-        "x": 571.999755859375,
+        "x": 572.0,
         "y": -458.0
     }
 }
@@ -3379,7 +3379,7 @@
     "m_ObjectId": "7a0ea8aed1c64a9aaf87ab837c5d9ce7",
     "m_Title": "SecondryColor",
     "m_Position": {
-        "x": -221.99993896484376,
+        "x": -222.0,
         "y": -1111.0
     }
 }
