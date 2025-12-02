@@ -5,13 +5,11 @@ using UnityEngine;
 public class EnemyDetector : MonoBehaviour
 {
     [SerializeField] private float detectionRadius = 10.0f;
-    [SerializeField] private LayerMask enemyLayer;
+    [SerializeField] private LayerMask enemyLayer;  
 
-
-    public GameObject GetClosetEnemy()
+    public GameObject GetClosestEnemy()
     {
         Collider[] enemiesInRange = Physics.OverlapSphere(transform.position, detectionRadius, enemyLayer);
-
         if (enemiesInRange.Length > 0)
         {
             GameObject bestTarget = null;
@@ -20,7 +18,7 @@ public class EnemyDetector : MonoBehaviour
 
             foreach (Collider enemyCollider in enemiesInRange)
             {
-                if (enemyCollider.gameObject == this)
+                if (enemyCollider.gameObject == this.gameObject)
                     continue;
 
                 Vector3 directionToTarget = enemyCollider.transform.position - currentPosition;
@@ -32,7 +30,6 @@ public class EnemyDetector : MonoBehaviour
                     bestTarget = enemyCollider.gameObject;
                 }
             }
-
             return bestTarget;
         }
         else
@@ -48,11 +45,14 @@ public class EnemyDetector : MonoBehaviour
 
         foreach (Collider enemyCollider in enemiesInRange)
         {
-            if(enemyCollider.gameObject != this.gameObject)
+            if (enemyCollider.gameObject != this.gameObject)
             {
                 enemiesList.Add(enemyCollider.gameObject);
             }
+
         }
         return enemiesList;
     }
+
+
 }
